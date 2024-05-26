@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch Collection</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .header { text-align: center; padding: 20px; }
+  .watch-gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+  .watch { margin: 15px; border: 1px solid #ddd; padding: 10px; }
+  .watch img { max-width: 100%; height: auto; }
+  .watch-details { text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to Our Watch Collection</h1>
+  <p>Explore our exclusive watches.</p>
+</div>
+
+<div class="watch-gallery">
+  <!-- Watch items will be added here by JavaScript -->
+</div>
+
+<script>
+// Example array of watches
+const watches = [
+  { name: 'Classic Watch', image: 'classic-watch.jpg', description: 'A timeless piece.' },
+  { name: 'Modern Watch', image: 'modern-watch.jpg', description: 'Sleek and modern.' },
+  // Add more watch objects here
+];
+
+// Function to display watches
+function displayWatches() {
+  const gallery = document.querySelector('.watch-gallery');
+  watches.forEach(watch => {
+    const watchDiv = document.createElement('div');
+    watchDiv.classList.add('watch');
+    watchDiv.innerHTML = `
+      <img src="${watch.image}" alt="${watch.name}">
+      <div class="watch-details">
+        <h3>${watch.name}</h3>
+        <p>${watch.description}</p>
+      </div>
+    `;
+    gallery.appendChild(watchDiv);
+  });
+}
+
+// Call the function to display watches
+displayWatches();
+</script>
+
+</body>
+</html>

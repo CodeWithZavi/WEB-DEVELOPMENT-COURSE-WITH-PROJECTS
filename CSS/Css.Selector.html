@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+           
+
+                *{
+                     margin: 0;
+                     padding: 0;
+                }
+                /* .box:last-child{
+                    background-color: aqua;
+                }
+                .box::first-line{
+                      background-color: blue;
+                } */
+
+                /* for All */
+                .boxes *{
+                      margin: 20px;
+                      padding: 22px;
+                      border: 2px solid black;
+                      padding-top: 50px;
+                }
+                /* .box:nth-child(even)
+                {
+                     background-color: violet
+                } */
+                .boxes::before{
+                     content: "noman shakir";
+                    font-size: 49px;
+                     /* background-color: aqua; */
+                    
+                }
+                .boxes::after{
+                    content: "hey i am after content";
+                    /* background-color: blue; */
+                    
+                }
+                ::selection{
+                     color: aqua;
+                     background-color: yellow;
+                }
+                input::placeholder{
+                    color: blue;
+                    font-size: 20px;
+                    
+                }
+     
+
+     </style>
+    
+         <div class="boxes">
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quo quis itaque, in ullam minus aliquam expedita id suscipit est.</div>
+            <div class="box">We can use before and after for inserting </div>
+            <div class="box">i am box3</div>
+           
+         </div>
+         <br>
+         <input type="text" placeholder="write your name here" >
+
+</body>
+</html>

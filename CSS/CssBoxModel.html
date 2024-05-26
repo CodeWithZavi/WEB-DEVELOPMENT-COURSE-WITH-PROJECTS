@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         /* is se dono box ko acess kr sakta hun */
+        .box{
+
+              background-color:aqua;
+        }
+        *{
+             padding:0%;
+             margin:0%;
+        }
+
+        .box1{
+              color: red;
+              padding: 20px;
+              margin :25px;
+              border:5px solid blue;
+              height: 200px;
+              
+              /* box sixing se total heaight(200) = sari chaezai add ho ka total hieght 200 hogi peding and boder ko include kr ke */
+              box-sizing: border-box;
+        }
+        .box2{
+        
+             /* agar margin same ho dono ki to mid ma wo aie gi jo max hogi */
+            color: purple;
+            padding: 20px;
+              margin :25px;
+              border:5px solid black;
+              height: 200px;
+              
+              /* box sixing se total heaight(200) = sari chaezai add ho ka total hieght 200 hogi peding and boder ko include kr ke */
+              box-sizing: border-box;
+        }
+
+
+          </style>
+
+  <!-- multiple classes -->
+    <div class="box box1">i am a box 1</div>
+    <div class="box box2">I am box 2</div>
+</body>
+</html>

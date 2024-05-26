@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- THIS CODE WILL READ THE VALUES FROM REG FORM AND PRINT IT IN console -->
+        <style>
+             * {box-sizing: border-box;}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+.icon {
+  padding: 10px;
+  background: rgb(221, 8, 8);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid rgb(161, 20, 27);
+}
+
+
+.btn {
+  background-color: rgb(226, 18, 18);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+h2{
+   color: rgb(228, 27, 44);
+   font-size: 35px;
+}
+        </style>
+
+<form id="registerForm" action="/action_page.php">
+  <!-- phg ka kio work ni ha is code ma agr remove krqain to yeh effect ni kare gi  -->
+    <h2>Register Form By Noman Shakir </h2>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Username" name="usrnm">
+    </div>
+  
+    <div class="input-container">
+      <i class="fa fa-envelope icon"></i>
+      <input class="input-field" type="text" placeholder="Email" name="email">
+    </div>
+  
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="password" placeholder="Password" name="psw">
+    </div>
+  
+    <button type="submit" class="btn">Register</button>
+</form>
+
+<script>
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+       
+        var username = document.querySelector('input[name="usrnm"]').value;
+        var email = document.querySelector('input[name="email"]').value;
+        var password = document.querySelector('input[name="psw"]').value;
+
+        console.log('Username:', username);
+        console.log('Email:', email);
+        console.log('Password:', password);
+    });
+</script>
+
+</body>
+</html>

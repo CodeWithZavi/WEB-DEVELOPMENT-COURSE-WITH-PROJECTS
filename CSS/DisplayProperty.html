@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Displat property</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+
+            background-color: aqua;
+            border: 2px solid blue;
+            display: inline-block;
+            width: 200px;
+            padding: 40px;
+            margin: 40px;
+            /* if we use diplay non then wo box ghaib ho jae ga 
+            And if we use visible hidden then space rahe gi lekin box urh jaega*/
+            display: inline-flex;
+            justify-content: center;
+
+        }
+
+        .cls {
+            background-color: aqua;
+            border: 2px solid blue;
+       
+            display:grid;
+            width: 200px;
+            margin: 40px;
+            padding: 30px;
+
+
+
+        }
+    </style>
+
+    <div class="box box1">
+        i am a box in div
+
+    </div>
+    <div class="box">I am aslo a box in dev</div>
+
+    <div class="cls">
+        i am a grid
+    </div>
+
+    <span>I am span and in am : </span>
+    <span>inline element </span>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSFORM</title>
+</head>
+<body>
+    
+       <style>
+        *{
+             margin: 1px;
+             padding: 1px;
+        }
+        body{
+             background-color: aqua;
+        }
+        .box{
+
+            width: 100px;
+            height: 100px;
+            font-style: oblique;
+            background-color: chartreuse;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform : rotate(180deg) */
+            /* transform: rotateZ(0.5turn);   0.5 = 180  */
+            /* transform: rotateZ(9deg); */
+            /* transform: skew(12deg); we can strech */
+            /* transform: skewY(30deg); */
+            /* we can use mutile  */
+         /* transform: translateX(100%)   skewX(23deg)  translateY(23px);  */
+          transform: rotate(0.125turn);
+          /* transform-origin: -50% -50%; */
+            
+
+        }
+        .con{
+            background-color: wheat;
+            width: 100vw;
+            height: 70vh;
+             border: 5px solid rgb(53, 20, 235);
+        }
+
+       </style>
+
+       <div class="con">
+          <div class="box">
+                BOX
+          </div>
+       </div>
+</body>
+</html>

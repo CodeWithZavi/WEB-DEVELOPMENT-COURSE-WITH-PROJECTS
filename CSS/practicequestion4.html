@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UL LI </title>
+</head>
+<body>
+    
+
+    <style>
+        :root{
+             --col : rgb(70, 0, 128);
+             --col2 : blue;
+             --col3 : red; 
+        }
+         *{
+            margin: 0;
+            padding: 0;
+        
+         }
+
+    ul li 
+    {
+         list-style: none;
+        margin: 20px;
+         padding: 30px; 
+         border: 2px solid green;     
+    }
+    ul {
+         display: flex;
+         justify-content: center;
+            align-items: center;
+      
+         
+    }
+    ul li:first-child
+    {
+          background-color: var(--col);
+    }
+        ul li:last-child{
+             background-color: var(--col3);
+        }
+        ul li:nth-child(2)
+        {
+           background-color: var(--col2);
+        }
+       
+    </style>
+       
+ 
+    <main>
+         
+         <ul class="noman">
+             <li>Home</li>
+             <li>About</li>
+             <li>Contact</li>
+         </ul> 
+    </main>
+</body>
+</html>

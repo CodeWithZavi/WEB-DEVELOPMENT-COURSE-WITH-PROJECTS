@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+<body>
+    <div>
+        <h1 style="margin: 5px; color: chocolate; border-color: rgb(235, 9, 9);">This is a form of CodeZavian Tech</h1>
+        <form action="form.php">
+            <!-- we asume that we are  using php in backend -->
+            <input type="text" placeholder="enter your name">
+            <br>
+            <label for="sectionida">
+                <input type="radio" value="Section a" name="section" id="sectionida"> Section A
+            </label><br>
+            <!-- konca element kia ha yeh pechan apke name is hogi backend pa  -->
+            <label for="sectionidb">
+                <!-- when name is same so at a time only one will click or slect -->
+                <input type="radio" value="Section b" name="section" id="sectionidb"> Section B
+            </label><br>
+            <label for="sectionidc">
+                <input type="radio" value="Section a" name="section" id="sectionidc"> Section C
+            </label>
+            <br>
+            <!-- class is like a house And ID sab ka unique hoga same ni ho sakta ha  -->
+            <input type="checkbox" name="canteen" id="foodcanteen"> 
+            <label for="foodcanteen">do u want food</label>  
+            <!-- fro SEO -->
+            <br><br>
+            <input type="datetime-local" name="" id="">
+            <hr> 
+            <textarea name="explain" id="explain" cols="30" rows="10" placeholder="enter the tect"></textarea>
+
+            <hr><br>
+
+            <select style="color: blue; width: auto;" name="car" id="car">
+                <option value="slect you no "> Select our car</option>
+                <option value="mercedez">mercedez</option>
+                <option value="BMW">BMW</option>
+                <option value="lx 570">lx 570</option>
+            </select>
+
+            <select style="margin: auto; color :rgb(235, 9, 9); " name="Game" id="game12">
+                <option value="Select game">select game</option>
+                  <option value="Pubg">pubg</option>
+                  <option value="need for speed">Need for speed</option>
+
+            </select>
+            
+
+
+        </form>
+
+</body>
+
+</html>

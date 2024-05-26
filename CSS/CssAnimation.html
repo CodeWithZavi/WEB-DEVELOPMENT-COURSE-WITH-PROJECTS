@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <style>
+        .container {
+            background-color: rgb(145, 7, 7);
+            width: 50vw;
+            height: 70vh;
+
+        }
+
+        .box {
+            background-color: blueviolet;
+            width: 10vw;
+            height: 10vh;
+            color: white;
+            /* animation-name: zavian;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function:cubic-bezier(0.96, 0.41, 0.15, 0.96);
+            animation-direction: alternate-reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;; */
+             animation: zavian 3s cubic-bezier(0.96, 0.41, 0.15, 0.96),secondAnimation 3s cubic-bezier(0.96, 0.41, 0.15, 0.96); 
+            
+          
+        }
+        @keyframes zavian {
+
+            from {
+
+                background-color: yellow;
+
+            }
+
+            to {
+                 transform: translateX(1000px);
+                 background-color: red;
+            }
+            
+        }
+        @keyframes secondAnimation {
+
+            0%{
+                 transform: rotate(200deg);
+
+            }
+            20%{
+                transform: rotate(300deg);
+            }
+            50%{
+                transform: rotate(360deg);
+            }
+            80%{
+                 transform: scale(200deg);
+            }
+            100%{
+                transform: translateX(12deg);
+                
+            }
+            
+        }
+
+      
+    </style>
+
+    <div class="container">
+        <div class="box translate">
+            BOX
+
+        </div>
+    </div>
+</body>
+
+</html>
