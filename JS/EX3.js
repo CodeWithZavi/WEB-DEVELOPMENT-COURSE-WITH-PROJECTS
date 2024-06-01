@@ -12,7 +12,7 @@ function facfor(number)
 console.log(facfor(b))
 
 function factorial(number){
-    let arr = Array.from(Array(number+1).keys())
+    let arr = Array.from(Array(number+1).keys())  // method for making array 
     let c = arr.slice(1,).reduce((a, b)=> a*b )
     return c
  }
