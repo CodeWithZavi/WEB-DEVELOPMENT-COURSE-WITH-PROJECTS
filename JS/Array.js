@@ -19,16 +19,12 @@
 // // let a3 = [43,5,2]
 // // console.log(a1.concat(a2,a3))
 
-
 // let a = [1, 93, 5, 6, 88]
-
 
 // // for (let index = 0; index < a.length; index++) {
 // //     const element = a[index];
 // //     console.log(element)
-    
 // // }
-
 // // a.forEach((value, index, arr)=>{
 // //     console.log(value, index, arr)
 // // })
@@ -77,6 +73,16 @@ const greaterThanSeven = (e)=>{
 
 console.log(arr.filter(greaterThanSeven))
 
+const graterthan = (e) => {
+
+    if(e>6)
+        {
+             return true
+        }
+        return false
+}
+console.log(arr.filter(graterthan))
+
 
 let arr2 = [1,2,3,4,5,6]
 
@@ -85,4 +91,4 @@ const red = (a, b)=>{
 }
 
 
-console.log(arr2.reduce(red))
+
