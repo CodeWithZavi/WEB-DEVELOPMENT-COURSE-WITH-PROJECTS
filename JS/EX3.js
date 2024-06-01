@@ -16,4 +16,4 @@ function factorial(number){
     let c = arr.slice(1,).reduce((a, b)=> a*b )
     return c
  }
- console.log(factorial(b))x
+ console.log(factorial(b))
