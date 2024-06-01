@@ -102,3 +102,5 @@ const mul = (a,b) => {
 console.log(a.reduce(mul))
 
 
+Array.from("SARDAR NOMAN ");  // convert to array 
+
