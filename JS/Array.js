@@ -90,5 +90,15 @@ const red = (a, b)=>{
     return a+b
 }
 
+console.log(arr2.reduce(red))  // for all
+
+// for all
+
+let a = [3,4,3,5,3,4,23,,5,32,3]
+
+const mul = (a,b) => {
+    return a*b;
+}
+console.log(a.reduce(mul))
 
 
