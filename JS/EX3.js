@@ -8,7 +8,7 @@ function facfor(number)
              fac = fac*i;
         }
         return fac;
-}
+} 
 console.log(facfor(b))
 
 function factorial(number){
