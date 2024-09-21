@@ -61,17 +61,18 @@
             let val3 = Math.ceil(0 + Math.random() * 255);
             return `rgb(${val1}, ${val2}, ${val3})`
         }
-        // let a = setInterval(() => {
-        //     document.querySelector(".childContainer").style.background = getRandomColor();
-        // }, 1000);
-
-        // console.log(a)
-
-        let a = setTimeout(() => {
+        let a = setInterval(() => {
             document.querySelector(".childContainer").style.background = getRandomColor();
-        }, 5000);
+        }, 3000);
+        // isko cancel karne ka lie we use claer interval then it will stop 
 
         console.log(a)
+
+        // let a = setTimeout(() => {    // sirf ak bar bas change hoga us time k BHAD 
+        //     document.querySelector(".childContainer").style.background = getRandomColor();
+        // }, 5000);
+
+        // console.log(a)
 
 
     </script>
